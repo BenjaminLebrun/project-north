@@ -17,11 +17,7 @@ VOWELS = {
 def extract_vowels(name: str):
     normalized = normalize_name(name)
 
-    return "".join(
-        letter
-        for letter in normalized
-        if letter in VOWELS
-    )
+    return "".join(letter for letter in normalized if letter in VOWELS)
 
 
 def calculate_soul(name: str):
@@ -35,4 +31,3 @@ def calculate_soul(name: str):
         "total": total,
         "soul": reduced,
     }
-    

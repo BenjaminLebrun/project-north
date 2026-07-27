@@ -33,16 +33,16 @@ def run():
     )
 
     parser.add_argument(
-    "--format",
-    choices=["terminal", "json", "markdown"],
-    default="terminal",
-    help="Output format",
+        "--format",
+        choices=["terminal", "json", "markdown"],
+        default="terminal",
+        help="Output format",
     )
 
     parser.add_argument(
-    "--version",
-    action="version",
-    version="project-north 0.2.0",
+        "--version",
+        action="version",
+        version="project-north 0.2.0",
     )
 
     args = parser.parse_args()
@@ -73,4 +73,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-

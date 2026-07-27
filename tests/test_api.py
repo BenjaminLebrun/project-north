@@ -10,12 +10,6 @@ def test_api_analysis():
         1997,
     )
 
-    assert (
-        result["profile"]["expression"]["expression"]
-        == 5
-    )
+    assert result["profile"]["expression"]["expression"] == 5
 
-    assert (
-        result["interpretation"]["expression"]
-        == "Liberté, mouvement, adaptation"
-    )
+    assert result["interpretation"]["expression"] == "Liberté, mouvement, adaptation"

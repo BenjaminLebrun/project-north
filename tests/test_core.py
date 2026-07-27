@@ -38,6 +38,7 @@ def test_expression_multiple_names():
     assert result["total"] == 76
     assert result["expression"] == 4
 
+
 from project_north.numerology.soul import calculate_soul
 
 
@@ -47,6 +48,7 @@ def test_soul_benjamin_lebrun():
     assert result["vowels"] == "EAIEU"
     assert result["total"] == 23
     assert result["soul"] == 5
+
 
 from project_north.numerology.personality import calculate_personality
 
@@ -72,6 +74,7 @@ def test_non_master_number():
     assert not is_master_number(5)
     assert not is_master_number(44)
 
+
 from project_north.numerology.life_path import calculate_life_path
 
 
@@ -84,6 +87,7 @@ def test_life_path_benjamin():
 
     assert result["total"] == 31
     assert result["life_path"] == 4
+
 
 from project_north.numerology.birth_date import analyze_birth_date
 
@@ -101,6 +105,7 @@ def test_birth_date_analysis():
     assert result["date"]["year"] == 1997
 
     assert result["life_path"]["life_path"] == 4
+
 
 from project_north.numerology.profile import create_profile
 

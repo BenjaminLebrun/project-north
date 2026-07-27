@@ -12,12 +12,6 @@ def test_complete_profile_analysis():
 
     assert result["profile"]["expression"]["expression"] == 5
 
-    assert (
-        result["interpretation"]["expression"]
-        == "Liberté, mouvement, adaptation"
-    )
+    assert result["interpretation"]["expression"] == "Liberté, mouvement, adaptation"
 
-    assert (
-        result["interpretation"]["life_path"]
-        == "Chemin de construction"
-    )
+    assert result["interpretation"]["life_path"] == "Chemin de construction"

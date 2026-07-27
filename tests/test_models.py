@@ -8,9 +8,7 @@ from project_north.models.profile import (
 def test_profile_model():
 
     profile = NumerologyProfile(
-        identity=ProfileIdentity(
-            "Benjamin Lebrun"
-        ),
+        identity=ProfileIdentity("Benjamin Lebrun"),
         birth_date=ProfileDate(
             12,
             11,

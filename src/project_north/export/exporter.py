@@ -10,6 +10,4 @@ def export_profile(result, format="json"):
     if format == "markdown":
         return export_markdown(result)
 
-    raise ValueError(
-        f"Unsupported export format: {format}"
-    )
+    raise ValueError(f"Unsupported export format: {format}")

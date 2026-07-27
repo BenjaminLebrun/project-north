@@ -21,4 +21,3 @@ class NumerologyProfile:
     soul: int
     personality: int
     life_path: int
-    

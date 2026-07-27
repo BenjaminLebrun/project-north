@@ -3,13 +3,7 @@ from project_north.export.exporter import export_profile
 
 def test_unified_json_export():
 
-    result = {
-        "profile": {
-            "identity": {
-                "name": "Benjamin Lebrun"
-            }
-        }
-    }
+    result = {"profile": {"identity": {"name": "Benjamin Lebrun"}}}
 
     output = export_profile(result, "json")
 

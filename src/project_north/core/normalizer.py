@@ -2,10 +2,4 @@ from unidecode import unidecode
 
 
 def normalize_name(name):
-    return (
-        unidecode(name)
-        .upper()
-        .replace("-", "")
-        .replace(" ", "")
-        .replace("'", "")
-    )
+    return unidecode(name).upper().replace("-", "").replace(" ", "").replace("'", "")

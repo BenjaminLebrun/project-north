@@ -5,23 +5,11 @@ def test_markdown_export():
 
     result = {
         "profile": {
-            "identity": {
-                "name": "Benjamin Lebrun"
-            },
-            "expression": {
-                "expression": 5
-            },
-            "soul": {
-                "soul": 5
-            },
-            "personality": {
-                "personality": 9
-            },
-            "birth_date": {
-                "life_path": {
-                    "life_path": 4
-                }
-            },
+            "identity": {"name": "Benjamin Lebrun"},
+            "expression": {"expression": 5},
+            "soul": {"soul": 5},
+            "personality": {"personality": 9},
+            "birth_date": {"life_path": {"life_path": 4}},
         },
         "interpretation": {
             "expression": "Liberté",

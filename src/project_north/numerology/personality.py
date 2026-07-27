@@ -18,10 +18,7 @@ def extract_consonants(name: str):
     normalized = normalize_name(name)
 
     return "".join(
-        letter
-        for letter in normalized
-        if letter.isalpha()
-        and letter not in VOWELS
+        letter for letter in normalized if letter.isalpha() and letter not in VOWELS
     )
 
 
@@ -36,4 +33,3 @@ def calculate_personality(name: str):
         "total": total,
         "personality": reduced,
     }
-    

@@ -16,13 +16,12 @@ def calculate_name_value(name):
     normalized = normalize_name(name)
     return calculate_letters_value(normalized)
 
+
 def calculate_letters_details(word):
     details = []
 
     for letter in word:
         if letter in PYTHAGOREAN_ALPHABET:
-            details.append(
-                (letter, PYTHAGOREAN_ALPHABET[letter])
-            )
+            details.append((letter, PYTHAGOREAN_ALPHABET[letter]))
 
     return details
