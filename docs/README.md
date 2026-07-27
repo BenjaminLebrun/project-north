@@ -25,6 +25,11 @@
 
 An open-source numerology research engine written in Python.
 
+![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+
 ## Features
 
 - Expression Number
@@ -88,4 +93,8 @@ research/
 
 ## License
 
-MIT
+MIT License
+
+Copyright (c) 2026 Benjamin Lebrun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
