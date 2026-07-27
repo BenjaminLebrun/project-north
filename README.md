@@ -1,74 +1,61 @@
-# project-north
+# Project North
 
-Phase 0 — Conception
+An open-source numerology research engine written in Python.
 
-Nous écrivons un document de conception complet :
+## Features
 
-la philosophie ;
-les règles ;
-les écoles supportées ;
-les formules ;
-les fichiers ;
-les algorithmes ;
-les pondérations ;
-les cas limites.
+- Expression Number
+- Soul Number
+- Personality Number
+- Life Path Number
+- Interpretation Engine
+- CLI
+- JSON Export
+- Markdown Export
 
-PHASE 0 — Research
+## Installation
 
-project-north/
+```bash
+git clone <repository>
 
-README.md
+cd project-north
 
-LICENSE
+make install
+```
 
-docs/
-  VISION.md
-  
-  PHILOSOPHY.md
-  
-  ARCHITECTURE.md
-  
-  NUMEROLOGY.md
-  
-  SCORING.md
-  
-  ROADMAP.md
-  
-  CHANGELOG.md
+## Usage
 
-research/
-  01_pythagorean.ipynb
-  
-  02_expression.ipynb
-  
-  03_soul.ipynb
-  
-  04_personality.ipynb
-  
-  05_master_numbers.ipynb
-  
-  06_scoring.ipynb
-  
-  07_first_names.ipynb
+```bash
+make run
+```
 
-src/
-  numerology/
-  
-  identity/
-  
-  recommendation/
-  
-  reports/
+or
 
-tests/
+```bash
+python src/project_north/cli/main.py "Benjamin Lebrun" 12 11 1997
+```
 
-data/
+## Tests
 
-examples/
+```bash
+make test
+```
 
 ## Documentation
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [API](docs/API.md)
-- [Roadmap](docs/ROADMAP.md)
+See the documentation index:
 
+- [Documentation](docs/README.md)
+
+## Project Structure
+
+```text
+docs/
+research/
+src/
+tests/
+```
+
+## License
+
+MIT
