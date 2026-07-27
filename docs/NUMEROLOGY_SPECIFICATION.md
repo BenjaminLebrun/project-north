@@ -254,9 +254,13 @@ Year:
 
 Life Path = 22
 
+## Historical Methods Considered
+
+Two calculation methods were evaluated during the design phase.
+
 Two possible methods:
 
-## Method A — Global Reduction
+### Method A — Global Reduction
 
 day + month + year
 
@@ -271,7 +275,7 @@ Example:
 = 4
 
 
-## Method B — Component Reduction
+### Method B — Component Reduction
 
 day → 3
 
