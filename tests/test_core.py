@@ -112,6 +112,16 @@ def test_life_path_master_number():
 
     assert result["life_path"]["life_path"] == 22
 
+def test_master_numbers_preserved():
+
+    expression = calculate_expression("PROJECT")
+    soul = calculate_soul("PROJECT")
+    personality = calculate_personality("PROJECT")
+
+    assert expression["expression"] == 33
+    assert soul["soul"] == 11
+    assert personality["personality"] == 22
+
 
 from project_north.numerology.profile import create_profile
 

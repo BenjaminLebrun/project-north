@@ -1,5 +1,5 @@
 from project_north.core.normalizer import normalize_name
-from project_north.core.reducers import reduce_number
+from project_north.core.reducers import reduce_with_masters
 from project_north.core.validators import (
     calculate_letters_value,
 )
@@ -26,7 +26,7 @@ def calculate_personality(name: str):
     consonants = extract_consonants(name)
 
     total = calculate_letters_value(consonants)
-    reduced = reduce_number(total)
+    reduced = reduce_with_masters(total)
 
     return {
         "consonants": consonants,

@@ -14,6 +14,13 @@ The objective is to make every result explainable and reproducible.
 
 ## Normalization
 
+| Calculation | Master Numbers Policy |
+|-------------|-----------------------|
+| Expression  | Under review |
+| Soul        | Under review |
+| Personality | Under review |
+| Life Path   | Preserved |
+
 Before calculation:
 
 - Convert text to uppercase

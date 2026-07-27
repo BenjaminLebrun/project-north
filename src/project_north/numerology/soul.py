@@ -1,5 +1,5 @@
 from project_north.core.normalizer import normalize_name
-from project_north.core.reducers import reduce_number
+from project_north.core.reducers import reduce_with_masters
 from project_north.core.validators import (
     calculate_letters_value,
 )
@@ -24,7 +24,7 @@ def calculate_soul(name: str):
     vowels = extract_vowels(name)
 
     total = calculate_letters_value(vowels)
-    reduced = reduce_number(total)
+    reduced = reduce_with_masters(total)
 
     return {
         "vowels": vowels,

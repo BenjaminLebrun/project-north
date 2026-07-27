@@ -8,6 +8,9 @@ EXPRESSION_RULES = {
     7: "Recherche, introspection, connaissance",
     8: "Ambition, puissance, matérialisation",
     9: "Humanisme, compassion, accomplissement",
+    11: "Chemin d'inspiration",
+    22: "Chemin de construction majeur",
+    33: "Chemin de transmission supérieure",
 }
 
 
@@ -21,6 +24,9 @@ SOUL_RULES = {
     7: "Recherche de vérité",
     8: "Recherche de maîtrise",
     9: "Recherche de contribution",
+    11: "Chemin d'inspiration",
+    22: "Chemin de construction majeur",
+    33: "Chemin de transmission supérieure",
 }
 
 
@@ -34,6 +40,9 @@ PERSONALITY_RULES = {
     7: "Perçu comme profond",
     8: "Perçu comme puissant",
     9: "Perçu comme inspirant",
+    11: "Chemin d'inspiration",
+    22: "Chemin de construction majeur",
+    33: "Chemin de transmission supérieure",
 }
 
 
