@@ -15,3 +15,13 @@ def test_reduce_22():
 
 def test_reduce_33():
     assert reduce_number(33) == 33
+
+
+from project_north.numerology.expression import calculate_expression
+
+
+def test_expression_benjamin_lebrun():
+    result = calculate_expression("Benjamin Lebrun")
+
+    assert result["total"] == 59
+    assert result["expression"] == 5
