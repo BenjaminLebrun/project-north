@@ -66,5 +66,9 @@ data/
 
 examples/
 
+## Documentation
 
+- [Architecture](docs/ARCHITECTURE.md)
+- [API](docs/API.md)
+- [Roadmap](docs/ROADMAP.md)
 
