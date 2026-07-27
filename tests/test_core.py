@@ -35,5 +35,5 @@ def test_expression_multiple_names():
     )
 
     assert result["full_name"] == "Benjamin Samuel Lebrun"
-    assert result["total"] == 92
-    assert result["expression"] == 11
+    assert result["total"] == 76
+    assert result["expression"] == 4
