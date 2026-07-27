@@ -1,9 +1,8 @@
+from project_north.core.normalizer import normalize_name
+from project_north.core.reducers import reduce_number
 from project_north.core.validators import (
     calculate_letters_value,
 )
-from project_north.core.reducers import reduce_number
-from project_north.core.normalizer import normalize_name
-
 
 VOWELS = {
     "A",

@@ -1,5 +1,5 @@
-from project_north.core.reducers import reduce_number
 from project_north.core.normalizer import normalize_name
+from project_north.core.reducers import reduce_number
 
 
 def test_master_number_reduction():

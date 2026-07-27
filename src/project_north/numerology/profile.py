@@ -1,7 +1,7 @@
-from project_north.numerology.expression import calculate_expression
-from project_north.numerology.soul import calculate_soul
-from project_north.numerology.personality import calculate_personality
 from project_north.numerology.birth_date import analyze_birth_date
+from project_north.numerology.expression import calculate_expression
+from project_north.numerology.personality import calculate_personality
+from project_north.numerology.soul import calculate_soul
 
 
 def create_profile(

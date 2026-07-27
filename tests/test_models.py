@@ -1,7 +1,7 @@
 from project_north.models.profile import (
-    ProfileIdentity,
-    ProfileDate,
     NumerologyProfile,
+    ProfileDate,
+    ProfileIdentity,
 )
 
 

@@ -1,5 +1,5 @@
-from project_north.numerology.profile import create_profile
 from project_north.analysis.interpretation import create_interpretation
+from project_north.numerology.profile import create_profile
 
 
 def test_basic_interpretation():

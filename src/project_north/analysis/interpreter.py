@@ -1,8 +1,8 @@
 from project_north.analysis.rules import (
     EXPRESSION_RULES,
-    SOUL_RULES,
-    PERSONALITY_RULES,
     LIFE_PATH_RULES,
+    PERSONALITY_RULES,
+    SOUL_RULES,
 )
 
 

@@ -1,8 +1,8 @@
-from project_north.core.validators import (
-    calculate_name_value,
-    calculate_letters_details,
-)
 from project_north.core.reducers import reduce_number
+from project_north.core.validators import (
+    calculate_letters_details,
+    calculate_name_value,
+)
 
 
 def calculate_expression(*names: str):
