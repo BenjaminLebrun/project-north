@@ -11,8 +11,11 @@ venv/
 env/
 
 # Conda
-.env
 .conda/
+
+# Environment variables
+.env
+.env.local
 
 # Jupyter
 .ipynb_checkpoints/
@@ -21,6 +24,12 @@ env/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Ruff
+.ruff_cache/
+
+# MyPy
+.mypy_cache/
 
 # Distribution
 build/
@@ -39,6 +48,3 @@ Thumbs.db
 
 # Logs
 *.log
-
-# Local configuration
-.env.local
