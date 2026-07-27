@@ -1,7 +1,6 @@
 import argparse
 
 from project_north.cli.display import display_profile
-
 from project_north.services.profile_service import (
     generate_profile_report,
 )
