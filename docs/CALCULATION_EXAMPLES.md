@@ -49,3 +49,21 @@ Result:
 
 Expression = 5
 
+## Chemin de vie
+
+12/11/1997
+
+Day:
+12 → 3
+
+Month:
+11 → 11
+
+Year:
+1997 → 8
+
+3 + 11 + 8
+
+= 22
+
+Life Path = 22

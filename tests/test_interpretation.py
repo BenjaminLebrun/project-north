@@ -16,4 +16,4 @@ def test_basic_interpretation():
     assert interpretation["core"]["expression"] == 5
     assert interpretation["core"]["soul"] == 5
     assert interpretation["core"]["personality"] == 9
-    assert interpretation["core"]["life_path"] == 4
+    assert interpretation["core"]["life_path"] == 22

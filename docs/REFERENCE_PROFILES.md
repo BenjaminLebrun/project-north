@@ -24,7 +24,7 @@ Personality:
 9
 
 Life Path:
-4
+22
 
 Engine Version:
 1.0

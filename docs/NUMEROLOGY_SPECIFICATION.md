@@ -230,7 +230,29 @@ Personality = 9
 # 8. Life Path Number
 
 Status:
-UNDER REVIEW
+IMPLEMENTED
+
+Method:
+Component Reduction with Master Number Preservation
+
+Example:
+
+12/11/1997
+
+Day:
+12 → 3
+
+Month:
+11 → 11
+
+Year:
+1997 → 8
+
+3 + 11 + 8
+
+= 22
+
+Life Path = 22
 
 Two possible methods:
 

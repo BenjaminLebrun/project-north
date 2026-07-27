@@ -47,4 +47,7 @@ LIFE_PATH_RULES = {
     7: "Chemin de recherche",
     8: "Chemin d'accomplissement",
     9: "Chemin de transmission",
+    11: "Chemin d'inspiration",
+    22: "Chemin de construction majeur",
+    33: "Chemin de transmission supérieure",
 }

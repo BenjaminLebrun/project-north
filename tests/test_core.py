@@ -85,8 +85,8 @@ def test_life_path_benjamin():
         1997,
     )
 
-    assert result["total"] == 31
-    assert result["life_path"] == 4
+    assert result["total"] == 22
+    assert result["life_path"] == 22
 
 
 from project_north.numerology.birth_date import analyze_birth_date
@@ -104,7 +104,13 @@ def test_birth_date_analysis():
     assert result["date"]["month"] == 11
     assert result["date"]["year"] == 1997
 
-    assert result["life_path"]["life_path"] == 4
+    assert result["life_path"]["life_path"] == 22
+
+def test_life_path_master_number():
+
+    result = analyze_birth_date(12, 11, 1997)
+
+    assert result["life_path"]["life_path"] == 22
 
 
 from project_north.numerology.profile import create_profile
@@ -124,4 +130,4 @@ def test_full_profile():
     assert profile["expression"]["expression"] == 5
     assert profile["soul"]["soul"] == 5
     assert profile["personality"]["personality"] == 9
-    assert profile["birth_date"]["life_path"]["life_path"] == 4
+    assert profile["birth_date"]["life_path"]["life_path"] == 22

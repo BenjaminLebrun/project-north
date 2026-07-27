@@ -13,4 +13,4 @@ def test_benjamin_reference_profile():
     assert profile["expression"]["expression"] == 5
     assert profile["soul"]["soul"] == 5
     assert profile["personality"]["personality"] == 9
-    assert profile["birth_date"]["life_path"]["life_path"] == 4
+    assert profile["birth_date"]["life_path"]["life_path"] == 22
