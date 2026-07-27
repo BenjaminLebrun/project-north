@@ -101,3 +101,22 @@ def test_birth_date_analysis():
     assert result["date"]["year"] == 1997
 
     assert result["life_path"]["life_path"] == 4
+
+from project_north.numerology.profile import create_profile
+
+
+def test_full_profile():
+
+    profile = create_profile(
+        "Benjamin Lebrun",
+        12,
+        11,
+        1997,
+    )
+
+    assert profile["identity"]["name"] == "Benjamin Lebrun"
+
+    assert profile["expression"]["expression"] == 5
+    assert profile["soul"]["soul"] == 5
+    assert profile["personality"]["personality"] == 9
+    assert profile["birth_date"]["life_path"]["life_path"] == 4
