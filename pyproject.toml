@@ -22,3 +22,25 @@ testpaths = ["tests"]
 exclude = [
     "research/*.ipynb"
 ]
+
+authors = [
+    { name = "Benjamin Lebrun" }
+]
+
+license = { text = "MIT" }
+
+readme = "README.md"
+
+keywords = [
+    "numerology",
+    "research",
+    "python",
+    "open-source"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+]
