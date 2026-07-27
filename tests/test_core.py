@@ -37,3 +37,13 @@ def test_expression_multiple_names():
     assert result["full_name"] == "Benjamin Samuel Lebrun"
     assert result["total"] == 76
     assert result["expression"] == 4
+
+from project_north.numerology.soul import calculate_soul
+
+
+def test_soul_benjamin_lebrun():
+    result = calculate_soul("Benjamin Lebrun")
+
+    assert result["vowels"] == "EAIEU"
+    assert result["total"] == 23
+    assert result["soul"] == 5
