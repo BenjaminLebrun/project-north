@@ -1,5 +1,7 @@
 import argparse
 
+from project_north.cli.display import display_profile
+
 from project_north.services.profile_service import (
     generate_profile_report,
 )
@@ -37,7 +39,7 @@ def run():
         args.year,
     )
 
-    print(result)
+    display_profile(result)
 
 
 if __name__ == "__main__":
