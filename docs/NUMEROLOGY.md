@@ -213,3 +213,65 @@ This document intentionally separates:
 Project North implements formulas.
 
 Interpretation belongs to higher-level modules.
+
+# Core Calculations
+
+## Expression Number
+
+Uses all letters of the full name.
+
+Formula:
+
+Full Name
+↓
+Letter Values
+↓
+Sum
+↓
+Reduction
+
+---
+
+## Soul Number
+
+Uses vowels only.
+
+Formula:
+
+Vowels
+↓
+Letter Values
+↓
+Sum
+↓
+Reduction
+
+---
+
+## Personality Number
+
+Uses consonants only.
+
+Formula:
+
+Consonants
+↓
+Letter Values
+↓
+Sum
+↓
+Reduction
+
+---
+
+## Life Path Number
+
+Uses birth date.
+
+Formula:
+
+Day + Month + Year
+↓
+Digit Sum
+↓
+Reduction
