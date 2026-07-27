@@ -57,3 +57,17 @@ def test_personality_benjamin_lebrun():
     assert result["consonants"] == "BNJMNLBRN"
     assert result["total"] == 36
     assert result["personality"] == 9
+
+
+from project_north.numerology.master_numbers import is_master_number
+
+
+def test_master_numbers():
+    assert is_master_number(11)
+    assert is_master_number(22)
+    assert is_master_number(33)
+
+
+def test_non_master_number():
+    assert not is_master_number(5)
+    assert not is_master_number(44)
