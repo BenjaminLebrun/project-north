@@ -1,3 +1,5 @@
+import argparse
+
 from project_north.services.profile_service import (
     generate_profile_report,
 )
@@ -5,14 +7,37 @@ from project_north.services.profile_service import (
 
 def run():
 
-    profile = generate_profile_report(
-        "Benjamin Lebrun",
-        12,
-        11,
-        1997,
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "name",
     )
 
-    print(profile)
+    parser.add_argument(
+        "day",
+        type=int,
+    )
+
+    parser.add_argument(
+        "month",
+        type=int,
+    )
+
+    parser.add_argument(
+        "year",
+        type=int,
+    )
+
+    args = parser.parse_args()
+
+    result = generate_profile_report(
+        args.name,
+        args.day,
+        args.month,
+        args.year,
+    )
+
+    print(result)
 
 
 if __name__ == "__main__":
