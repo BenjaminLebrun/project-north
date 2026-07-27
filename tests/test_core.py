@@ -84,3 +84,20 @@ def test_life_path_benjamin():
 
     assert result["total"] == 31
     assert result["life_path"] == 4
+
+from project_north.numerology.birth_date import analyze_birth_date
+
+
+def test_birth_date_analysis():
+
+    result = analyze_birth_date(
+        12,
+        11,
+        1997,
+    )
+
+    assert result["date"]["day"] == 12
+    assert result["date"]["month"] == 11
+    assert result["date"]["year"] == 1997
+
+    assert result["life_path"]["life_path"] == 4
