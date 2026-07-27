@@ -32,6 +32,12 @@ def run():
 
     args = parser.parse_args()
 
+    if not 1 <= args.day <= 31:
+        parser.error("Day must be between 1 and 31")
+
+    if not 1 <= args.month <= 12:
+        parser.error("Month must be between 1 and 12")
+
     result = generate_profile_report(
         args.name,
         args.day,
