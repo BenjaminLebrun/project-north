@@ -71,3 +71,16 @@ def test_master_numbers():
 def test_non_master_number():
     assert not is_master_number(5)
     assert not is_master_number(44)
+
+from project_north.numerology.life_path import calculate_life_path
+
+
+def test_life_path_benjamin():
+    result = calculate_life_path(
+        12,
+        11,
+        1997,
+    )
+
+    assert result["total"] == 31
+    assert result["life_path"] == 4
