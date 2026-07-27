@@ -47,3 +47,13 @@ def test_soul_benjamin_lebrun():
     assert result["vowels"] == "EAIEU"
     assert result["total"] == 23
     assert result["soul"] == 5
+
+from project_north.numerology.personality import calculate_personality
+
+
+def test_personality_benjamin_lebrun():
+    result = calculate_personality("Benjamin Lebrun")
+
+    assert result["consonants"] == "BNJMNLBRN"
+    assert result["total"] == 36
+    assert result["personality"] == 9
