@@ -25,3 +25,15 @@ def test_expression_benjamin_lebrun():
 
     assert result["total"] == 59
     assert result["expression"] == 5
+
+
+def test_expression_multiple_names():
+    result = calculate_expression(
+        "Benjamin",
+        "Samuel",
+        "Lebrun",
+    )
+
+    assert result["full_name"] == "Benjamin Samuel Lebrun"
+    assert result["total"] == 92
+    assert result["expression"] == 11
