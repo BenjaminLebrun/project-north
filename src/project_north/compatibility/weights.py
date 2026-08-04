@@ -1,15 +1,3 @@
-WEIGHTS = {
-    "expression": 30,
-    "soul": 25,
-    "personality": 20,
-    "biblical": 10,
-    "historical": 5,
-    "royal": 5,
-    "meaning": {
-        "light": 5,
-        "peace": 5,
-        "wisdom": 5,
-        "builder": 5,
-        "strength": 5,
-    },
-}
+from project_north.core.config import load_yaml
+
+WEIGHTS = load_yaml("scoring_weights.yaml")
