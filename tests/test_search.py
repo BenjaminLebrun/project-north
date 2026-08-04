@@ -7,9 +7,12 @@ def test_search_first_names():
 
     assert len(results) == 5
 
-    assert "score" in results[0]
+    scores = [
+        result["score"]
+        for result in results
+    ]
 
-    assert isinstance(
-        results[0]["score"],
-        int,
+    assert scores == sorted(
+        scores,
+        reverse=True,
     )
