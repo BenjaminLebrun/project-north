@@ -21,13 +21,6 @@ def test_search_output():
     for index, result in enumerate(results, start=1):
 
         print(
-    f"{index:>2}. "
-    f"{result.name:<15} "
-    f"{result.score:>3}"
-)
-
-    for detail in result.details:
-        print(
             f"{index:>2}. "
             f"{result.name:<15} "
             f"{result.score:>3}"
@@ -35,4 +28,3 @@ def test_search_output():
 
         for detail in result.details:
             print(f"      - {detail}")
-    
