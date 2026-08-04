@@ -8,7 +8,7 @@ def test_search_first_names():
     assert len(results) == 5
 
     scores = [
-        result["score"]
+        result.score
         for result in results
     ]
 
