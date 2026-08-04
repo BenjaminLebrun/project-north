@@ -1,11 +1,10 @@
+from project_north.reports.sections import summary, details, strengths_section
+
+
 def build_report(result):
-    return f"""
-{result.name}
-{'=' * len(result.name)}
-
-Score : {result.score}
-Interprétation : {result.interpretation}
-
-Détails :
-
-""" + "\n".join(f"- {detail}" for detail in result.details)
+    return "\n\n".join([
+        summary(result),
+        strengths_section(result),
+        "## Détails",
+        details(result),
+    ])
