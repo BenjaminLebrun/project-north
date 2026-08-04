@@ -31,14 +31,17 @@ def calculate_score(profile, first_name):
     # Compatibilité avec le profil existant
     if profile:
 
-        if expression == profile.get("expression"):
-            score += 10
+        if expression == profile.expression:
+          score += 10
+          details.append("Compatibilité Expression : +10")
 
-        if soul == profile.get("soul"):
+        if soul == profile.soul:
             score += 10
+            details.append("Compatibilité Âme : +10")
 
-        if personality == profile.get("personality"):
+        if personality == profile.personality:
             score += 10
+            details.append("Compatibilité Personnalité : +10")
 
     return {
     "score": score,

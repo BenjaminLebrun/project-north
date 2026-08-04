@@ -1,16 +1,16 @@
 from project_north.search.search import search_first_names
-
+from project_north.models.search_profile import SearchProfile
 
 def test_search_output():
 
-    results = search_first_names(
-    {
-        "expression": 5,
-        "soul": 5,
-        "personality": 9,
-        "life_path": 22,
-    }
-    )
+    profile = SearchProfile(
+    expression=5,
+    soul=5,
+    personality=9,
+    life_path=22,
+)
+
+    results = search_first_names(profile)
 
     print()
 
