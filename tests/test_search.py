@@ -5,7 +5,7 @@ def test_search_first_names():
 
     results = search_first_names({})
 
-    assert len(results) == 5
+    assert len(results) == 15
 
     scores = [
         result.score

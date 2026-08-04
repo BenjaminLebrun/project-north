@@ -1,6 +1,16 @@
 name,origin,meaning,biblical,historical,royal
-Gabriel,Hebrew,Force de Dieu,true,true,false
-Nathan,Hebrew,Dieu a donné,true,true,false
-Samuel,Hebrew,Dieu a entendu,true,true,false
-Arthur,Celtic,Ours,false,true,true
-Louis,Germanic,Guerrier célèbre,false,true,true
+Samuel,Hebrew,God has heard,true,true,false
+Nathan,Hebrew,God has given,true,true,false
+Gabriel,Hebrew,God is my strength,true,true,false
+Michael,Hebrew,Who is like God?,true,true,false
+Joseph,Hebrew,He will add,true,true,false
+David,Hebrew,Beloved,true,true,true
+Daniel,Hebrew,God is my judge,true,true,false
+Isaac,Hebrew,He laughs,true,true,false
+Jacob,Hebrew,Supplanter,true,true,false
+Benjamin,Hebrew,Son of the right hand,true,true,false
+Louis,French,Famous warrior,false,true,true
+Arthur,Celtic,Bear king,false,true,true
+Charles,Germanic,Free man,false,true,true
+Henry,Germanic,Ruler of the home,false,true,true
+Alexander,Greek,Defender of men,false,true,true
