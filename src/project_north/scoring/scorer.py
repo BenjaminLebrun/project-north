@@ -1,6 +1,7 @@
 def calculate_score(profile, first_name):
 
     score = 0
+    details = []
 
     expression = first_name["expression"]["expression"]
     soul = first_name["soul"]["soul"]
@@ -27,4 +28,19 @@ def calculate_score(profile, first_name):
     elif personality == 5:
         score -= 8
 
-    return score
+    # Compatibilité avec le profil existant
+    if profile:
+
+        if expression == profile.get("expression"):
+            score += 10
+
+        if soul == profile.get("soul"):
+            score += 10
+
+        if personality == profile.get("personality"):
+            score += 10
+
+    return {
+    "score": score,
+    "details": details,
+    }
