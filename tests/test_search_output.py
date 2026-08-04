@@ -30,3 +30,4 @@ def test_search_output():
         print(
             f"      - {detail}"
         )
+    
