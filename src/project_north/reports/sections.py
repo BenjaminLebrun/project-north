@@ -55,3 +55,10 @@ from project_north.reports.conclusion import conclusion
 def conclusion_section(result):
 
     return "## Conclusion\n\n" + conclusion(result)
+
+from project_north.reports.profile_summary import profile_summary
+
+
+def profile_summary_section(result):
+
+    return profile_summary(result)

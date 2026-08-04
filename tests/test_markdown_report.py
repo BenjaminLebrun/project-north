@@ -1,8 +1,8 @@
-from project_north.reports.report_builder import build_report
+from project_north.reports.markdown_report import export_markdown
 from project_north.models.search_result import SearchResult
 
 
-def test_build_report():
+def test_export_markdown(tmp_path):
 
     result = SearchResult(
         rank=1,
@@ -18,10 +18,12 @@ def test_build_report():
         ],
     )
 
-    report = build_report(result)
+    file_path = tmp_path / "report.md"
 
-    assert isinstance(report, str)
-    assert "Elias" in report
-    assert "Score" in report
-    assert "Très forte compatibilité" in report
-    
+    export_markdown(result, file_path)
+
+    content = file_path.read_text()
+
+    assert "Elias" in content
+    assert "Score" in content
+    assert "Très forte compatibilité" in content
