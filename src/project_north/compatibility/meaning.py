@@ -1,3 +1,7 @@
+from project_north.core.config import load_yaml
+
+MEANING_RULES = load_yaml("meaning_rules.yaml")
+
 MEANING_KEYWORDS = {
     "light": [
         "light",
@@ -35,7 +39,7 @@ def evaluate_meaning(meaning):
 
     matches = []
 
-    for category, keywords in MEANING_KEYWORDS.items():
+    for category, keywords in MEANING_RULES.items():
 
         for keyword in keywords:
 
