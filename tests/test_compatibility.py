@@ -9,4 +9,4 @@ def test_evaluator():
         personality=4,
     )
 
-    assert score == 75
+    assert score["score"] == 75

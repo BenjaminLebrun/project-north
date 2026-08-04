@@ -2,15 +2,50 @@ name,origin,meaning,biblical,historical,royal
 Samuel,Hebrew,God has heard,true,true,false
 Nathan,Hebrew,God has given,true,true,false
 Gabriel,Hebrew,God is my strength,true,true,false
-Michael,Hebrew,Who is like God?,true,true,false
+Michael,Hebrew,Who is like God,true,true,false
 Joseph,Hebrew,He will add,true,true,false
 David,Hebrew,Beloved,true,true,true
 Daniel,Hebrew,God is my judge,true,true,false
 Isaac,Hebrew,He laughs,true,true,false
 Jacob,Hebrew,Supplanter,true,true,false
 Benjamin,Hebrew,Son of the right hand,true,true,false
+Aaron,Hebrew,Mountain of strength,true,true,false
+Elias,Hebrew,My God is Yahweh,true,true,false
+Adam,Hebrew,Man,true,true,false
+Noah,Hebrew,Rest,true,true,false
+Jonas,Hebrew,Dove,true,true,false
 Louis,French,Famous warrior,false,true,true
 Arthur,Celtic,Bear king,false,true,true
 Charles,Germanic,Free man,false,true,true
 Henry,Germanic,Ruler of the home,false,true,true
+William,Germanic,Strong protector,false,true,true
 Alexander,Greek,Defender of men,false,true,true
+Leo,Latin,Lion,false,true,true
+Victor,Latin,Conqueror,false,true,false
+Maximus,Latin,Greatest,false,true,false
+Julian,Latin,Youthful,false,true,false
+Lucas,Latin,Light,false,false,false
+Felix,Latin,Lucky,false,true,false
+Augustus,Latin,Majestic,false,true,true
+Marcus,Latin,Dedicated to Mars,false,true,false
+Adrian,Latin,From the sea,false,true,false
+Theodore,Greek,Gift of God,false,true,false
+Nicholas,Greek,Victory of the people,false,true,false
+Alexander,Greek,Defender of men,false,true,true
+Leon,Greek,Lion,false,true,true
+Ethan,Hebrew,Strong,true,false,false
+Matthew,Hebrew,Gift of God,true,true,false
+James,Hebrew,Supplanter,true,true,false
+John,Hebrew,God is gracious,true,true,false
+Luke,Greek,Light,true,true,false
+Peter,Greek,Rock,true,true,false
+Simon,Hebrew,Heard by God,true,true,false
+Thomas,Aramaic,Twin,true,true,false
+Andrew,Greek,Strong and courageous,false,true,false
+Christopher,Greek,Bearer of Christ,false,true,false
+Arthur,Celtic,Bear king,false,true,true
+Oscar,Irish,Divine spear,false,true,false
+Finn,Irish,Fair,false,true,false
+Liam,Irish,Strong protector,false,false,false
+Oliver,Latin,Olive tree,false,true,false
+Edward,English,Wealthy guardian,false,true,true

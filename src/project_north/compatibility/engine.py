@@ -16,7 +16,8 @@ def evaluate_first_name(first_name):
         personality = first_name.personality
 
     return evaluate(
-        expression,
-        soul,
-        personality,
+      expression,
+      soul,
+      personality,
+      first_name,
     )
