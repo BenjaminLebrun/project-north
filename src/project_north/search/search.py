@@ -36,4 +36,4 @@ def search_first_names(profile):
         reverse=True,
     )
 
-    return results
+    return results[:50]

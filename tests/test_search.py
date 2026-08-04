@@ -16,3 +16,9 @@ def test_search_first_names():
         scores,
         reverse=True,
     )
+
+def test_search_limit():
+
+    results = search_first_names({})
+
+    assert len(results) <= 50
