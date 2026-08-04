@@ -5,7 +5,7 @@ from project_north.scoring.scorer import calculate_score
 
 
 def search_first_names(profile):
-
+    seen_names = set()
     first_names = load_first_names()
     analyzed = analyze_first_names(first_names)
 
@@ -36,6 +36,10 @@ def search_first_names(profile):
     )
 
     for index, result in enumerate(results, start=1):
+        if first_name["name"] in seen_names:
+            continue
+
+        seen_names.add(first_name["name"])
         result.rank = index
 
     return results[:50]

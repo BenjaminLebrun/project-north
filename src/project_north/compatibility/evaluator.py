@@ -1,5 +1,6 @@
 from project_north.compatibility.rules import RULES
 from project_north.compatibility.weights import WEIGHTS
+from project_north.compatibility.meaning import evaluate_meaning
 
 
 def evaluate(expression, soul, personality, metadata=None):
@@ -44,6 +45,19 @@ def evaluate(expression, soul, personality, metadata=None):
             details.append(
                 f"Royal : +{WEIGHTS['royal']}"
             )
+
+        meaning_matches = evaluate_meaning(
+            metadata.get("meaning")
+        )
+
+        for match in meaning_matches:
+
+            score += WEIGHTS["meaning"][match]
+
+            details.append(
+                f"Signification {match} : +{WEIGHTS['meaning'][match]}"
+            )
+            
 
     return {
         "score": score,
