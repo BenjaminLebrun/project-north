@@ -2,6 +2,7 @@ from project_north.database.analyzer import analyze_first_names
 from project_north.database.first_names import load_first_names
 from project_north.models.search_result import SearchResult
 from project_north.scoring.scorer import calculate_score
+from project_north.analysis.score_interpretation import interpret_score
 
 
 def search_first_names(profile):
@@ -34,6 +35,7 @@ def search_first_names(profile):
                 personality=first_name["personality"]["personality"],
                 score=scoring["score"],
                 details=scoring["details"],
+                interpretation=interpret_score(scoring["score"]),
             )
         )
 

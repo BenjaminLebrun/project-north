@@ -17,3 +17,5 @@ class SearchResult:
     score: int
 
     details: list[str]
+
+    interpretation: str = ""

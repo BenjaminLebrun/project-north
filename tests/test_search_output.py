@@ -23,7 +23,8 @@ def test_search_output():
         print(
             f"{index:>2}. "
             f"{result.name:<15} "
-            f"{result.score:>3}"
+            f"{result.score:>3} "
+            f"- {result.interpretation}"
         )
 
         for detail in result.details:
