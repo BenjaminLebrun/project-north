@@ -33,3 +33,25 @@ def warnings_section(result):
     return "## Points de vigilance\n\n" + "\n".join(
         f"- {item}" for item in values
     )
+
+
+from project_north.reports.recommendations import recommendations
+
+
+def recommendations_section(result):
+
+    values = recommendations(result)
+
+    if not values:
+        return "## Recommandations\n\nAucune recommandation disponible."
+
+    return "## Recommandations\n\n" + "\n".join(
+        f"- {item}" for item in values
+    )
+
+from project_north.reports.conclusion import conclusion
+
+
+def conclusion_section(result):
+
+    return "## Conclusion\n\n" + conclusion(result)
