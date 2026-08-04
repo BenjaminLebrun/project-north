@@ -1,5 +1,3 @@
-RULES = {
-    "expression": [8, 1, 4],
-    "soul": [33, 6],
-    "personality": [4, 8],
-}
+from project_north.core.config import load_yaml
+
+RULES = load_yaml("compatibility_rules.yaml")
