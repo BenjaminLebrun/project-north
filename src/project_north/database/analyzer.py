@@ -9,6 +9,7 @@ def analyze_first_name(first_name: dict):
 
     return {
         **first_name,
+        "gender": first_name.get("gender", "unknown"),
         "expression": calculate_expression(name),
         "soul": calculate_soul(name),
         "personality": calculate_personality(name),

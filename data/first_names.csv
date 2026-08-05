@@ -1,51 +1,64 @@
-name,origin,meaning,biblical,historical,royal
-Samuel,Hebrew,God has heard,true,true,false
-Nathan,Hebrew,God has given,true,true,false
-Gabriel,Hebrew,God is my strength,true,true,false
-Michael,Hebrew,Who is like God,true,true,false
-Joseph,Hebrew,He will add,true,true,false
-David,Hebrew,Beloved,true,true,true
-Daniel,Hebrew,God is my judge,true,true,false
-Isaac,Hebrew,He laughs,true,true,false
-Jacob,Hebrew,Supplanter,true,true,false
-Benjamin,Hebrew,Son of the right hand,true,true,false
-Aaron,Hebrew,Mountain of strength,true,true,false
-Elias,Hebrew,My God is Yahweh,true,true,false
-Adam,Hebrew,Man,true,true,false
-Noah,Hebrew,Rest,true,true,false
-Jonas,Hebrew,Dove,true,true,false
-Louis,French,Famous warrior,false,true,true
-Arthur,Celtic,Bear king,false,true,true
-Charles,Germanic,Free man,false,true,true
-Henry,Germanic,Ruler of the home,false,true,true
-William,Germanic,Strong protector,false,true,true
-Alexander,Greek,Defender of men,false,true,true
-Leo,Latin,Lion,false,true,true
-Victor,Latin,Conqueror,false,true,false
-Maximus,Latin,Greatest,false,true,false
-Julian,Latin,Youthful,false,true,false
-Lucas,Latin,Light,false,false,false
-Felix,Latin,Lucky,false,true,false
-Augustus,Latin,Majestic,false,true,true
-Marcus,Latin,Dedicated to Mars,false,true,false
-Adrian,Latin,From the sea,false,true,false
-Theodore,Greek,Gift of God,false,true,false
-Nicholas,Greek,Victory of the people,false,true,false
-Alexander,Greek,Defender of men,false,true,true
-Leon,Greek,Lion,false,true,true
-Ethan,Hebrew,Strong,true,false,false
-Matthew,Hebrew,Gift of God,true,true,false
-James,Hebrew,Supplanter,true,true,false
-John,Hebrew,God is gracious,true,true,false
-Luke,Greek,Light,true,true,false
-Peter,Greek,Rock,true,true,false
-Simon,Hebrew,Heard by God,true,true,false
-Thomas,Aramaic,Twin,true,true,false
-Andrew,Greek,Strong and courageous,false,true,false
-Christopher,Greek,Bearer of Christ,false,true,false
-Arthur,Celtic,Bear king,false,true,true
-Oscar,Irish,Divine spear,false,true,false
-Finn,Irish,Fair,false,true,false
-Liam,Irish,Strong protector,false,false,false
-Oliver,Latin,Olive tree,false,true,false
-Edward,English,Wealthy guardian,false,true,true
+name,gender,origin,meaning,biblical,historical,royal
+Samuel,male,Hebrew,God has heard,true,true,false
+Gabriel,male,Hebrew,Force de Dieu,true,true,false
+Daniel,male,Hebrew,God is my judge,true,true,false
+Michael,male,Hebrew,Who is like God,true,true,false
+Joseph,male,Hebrew,He will add,true,true,false
+Jacob,male,Hebrew,Supplanter,true,true,false
+Adam,male,Hebrew,Man,true,true,false
+Noah,male,Hebrew,Rest,true,true,false
+Isaac,male,Hebrew,Laughter,true,true,false
+David,male,Hebrew,Beloved,true,true,true
+Aaron,male,Hebrew,Mountain of strength,true,true,false
+Nathan,male,Hebrew,Gift,true,true,false
+Jonas,male,Hebrew,Dove,true,true,false
+Matthew,male,Hebrew,Gift of God,true,true,false
+James,male,Hebrew,Supplanter,true,true,false
+John,male,Hebrew,God is gracious,true,true,false
+Peter,male,Greek,Rock,true,true,false
+Andrew,male,Greek,Manly,true,true,false
+Thomas,male,Aramaic,Twin,true,true,false
+Simon,male,Hebrew,He has heard,true,true,false
+Luke,male,Greek,Light,true,true,false
+Christopher,male,Greek,Bearer of Christ,false,true,false
+Victor,male,Latin,Winner,false,true,false
+Marcus,male,Latin,Dedicated to Mars,false,true,false
+Maximus,male,Latin,Greatest,false,true,false
+Augustus,male,Latin,Venerable,false,true,true
+Charles,male,Germanic,Free man,false,true,true
+Louis,male,Germanic,Famous warrior,false,true,true
+William,male,Germanic,Resolute protector,false,true,true
+Henry,male,Germanic,Ruler of the home,false,true,true
+Edward,male,English,Wealthy guardian,false,true,true
+Arthur,male,Celtic,Bear,false,true,true
+Alexander,male,Greek,Defender,false,true,true
+Leo,male,Latin,Lion,false,true,true
+Leon,male,Greek,Lion,false,true,true
+Elias,male,Hebrew,Yahweh is my God,true,true,false
+Liam,male,Irish,Resolute protector,false,false,false
+Ethan,male,Hebrew,Strong,true,false,false
+Lucas,male,Latin,Light,false,false,false
+Julian,male,Latin,Youthful,false,true,false
+Felix,male,Latin,Happy,false,true,false
+Adrian,male,Latin,From Hadria,false,true,false
+Theodore,male,Greek,Gift of God,false,true,false
+Nicholas,male,Greek,Victory of the people,false,true,false
+Finn,male,Irish,Fair,false,true,false
+Oliver,male,Latin,Olive tree,false,true,false
+Oscar,male,Irish,Champion,false,true,false
+Benjamin,male,Hebrew,Son of the right hand,true,true,false
+Emma,female,Germanic,Universal,false,true,false
+Marie,female,Hebrew,Beloved,true,true,false
+Sarah,female,Hebrew,Princess,true,true,false
+Rebecca,female,Hebrew,To bind,true,true,false
+Rachel,female,Hebrew,Ewe,true,true,false
+Anna,female,Hebrew,Grace,true,true,false
+Esther,female,Persian,Star,true,true,false
+Judith,female,Hebrew,Woman of Judea,true,true,false
+Claire,female,Latin,Bright,false,true,false
+Victoria,female,Latin,Victory,false,true,false
+Sacha,unisex,Russian,Defender,false,false,false
+Noa,unisex,Hebrew,Motion,true,false,false
+Charlie,unisex,English,Free person,false,false,false
+Camille,unisex,Latin,Young ceremonial attendant,false,true,false
+Robin,unisex,Germanic,Bright fame,false,true,false

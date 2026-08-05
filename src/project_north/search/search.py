@@ -8,8 +8,13 @@ from project_north.analysis.score_interpretation import interpret_score
 def search_first_names(
     profile,
     settings=None,
+    filters=None,
 ):
+    if filters is None:
+        from project_north.models.search_filters import SearchFilters
 
+        filters = SearchFilters()
+    
     seen_names = set()
 
     first_names = load_first_names()
@@ -21,6 +26,23 @@ def search_first_names(
 
         if first_name["name"] in seen_names:
             continue
+
+        seen_names.add(first_name["name"])
+
+        if filters.gender:
+            gender = first_name.get("gender", "unknown")
+
+            if filters.gender == "male":
+                if gender not in ("male", "unisex"):
+                    continue
+
+            elif filters.gender == "female":
+                if gender not in ("female", "unisex"):
+                    continue
+
+            elif filters.gender == "unisex":
+                if gender != "unisex":
+                    continue
 
         seen_names.add(first_name["name"])
 
