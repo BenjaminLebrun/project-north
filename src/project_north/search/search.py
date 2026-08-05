@@ -5,7 +5,10 @@ from project_north.scoring.scorer import calculate_score
 from project_north.analysis.score_interpretation import interpret_score
 
 
-def search_first_names(profile):
+def search_first_names(
+    profile,
+    settings=None,
+):
 
     seen_names = set()
 
@@ -24,6 +27,7 @@ def search_first_names(profile):
         scoring = calculate_score(
             profile,
             first_name,
+            settings=settings,
         )
 
         results.append(

@@ -1,14 +1,29 @@
 from project_north.compatibility.rules import RULES
 from project_north.compatibility.weights import WEIGHTS
 from project_north.compatibility.meaning import evaluate_meaning
+from project_north.models.compatibility_settings import (
+    CompatibilitySettings,
+)
 
 
-def evaluate(expression, soul, personality, metadata=None):
+def evaluate(
+    expression,
+    soul,
+    personality,
+    metadata=None,
+    settings=None,
+):
+
+    if settings is None:
+        settings = CompatibilitySettings()
 
     score = 0
     details = []
 
-    if expression in RULES["expression"]:
+    if (
+        settings.use_expression
+        and expression in RULES["expression"]
+    ):
         score += WEIGHTS["expression"]
         details.append(
             f"Expression {expression} : +{WEIGHTS['expression']}"
