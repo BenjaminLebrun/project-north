@@ -1,7 +1,14 @@
 def summary(result):
     return f"""# {result.name}
 
-Score : {result.score}
+## Résumé
+
+Compatibilité numérologique : {result.base_score}
+
+Bonus : +{result.bonus_score}
+
+Score final : {result.score}
+
 Interprétation : {result.interpretation}
 """
 

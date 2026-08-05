@@ -17,14 +17,16 @@ def evaluate(
     if settings is None:
         settings = CompatibilitySettings()
 
-    score = 0
+    base_score = 0
+    bonus_score = 0
     details = []
 
+    # Compatibilité numérologique
     if (
         settings.use_expression
         and expression in RULES["expression"]
     ):
-        score += WEIGHTS["expression"]
+        base_score += WEIGHTS["expression"]
         details.append(
             f"Expression {expression} : +{WEIGHTS['expression']}"
         )
@@ -33,7 +35,7 @@ def evaluate(
         settings.use_soul
         and soul in RULES["soul"]
     ):
-        score += WEIGHTS["soul"]
+        base_score += WEIGHTS["soul"]
         details.append(
             f"Âme {soul} : +{WEIGHTS['soul']}"
         )
@@ -42,18 +44,19 @@ def evaluate(
         settings.use_personality
         and personality in RULES["personality"]
     ):
-        score += WEIGHTS["personality"]
+        base_score += WEIGHTS["personality"]
         details.append(
             f"Personnalité {personality} : +{WEIGHTS['personality']}"
         )
 
+    # Bonus
     if metadata:
 
         if (
             settings.use_biblical
             and metadata.get("biblical") == "true"
         ):
-            score += WEIGHTS["biblical"]
+            bonus_score += WEIGHTS["biblical"]
             details.append(
                 f"Biblique : +{WEIGHTS['biblical']}"
             )
@@ -62,7 +65,7 @@ def evaluate(
             settings.use_historical
             and metadata.get("historical") == "true"
         ):
-            score += WEIGHTS["historical"]
+            bonus_score += WEIGHTS["historical"]
             details.append(
                 f"Historique : +{WEIGHTS['historical']}"
             )
@@ -71,7 +74,7 @@ def evaluate(
             settings.use_royal
             and metadata.get("royal") == "true"
         ):
-            score += WEIGHTS["royal"]
+            bonus_score += WEIGHTS["royal"]
             details.append(
                 f"Royal : +{WEIGHTS['royal']}"
             )
@@ -82,17 +85,19 @@ def evaluate(
                 metadata.get("meaning")
             )
 
-
             for match in meaning_matches:
 
-                score += WEIGHTS["meaning"][match]
+                bonus_score += WEIGHTS["meaning"][match]
 
                 details.append(
                     f"Signification {match} : +{WEIGHTS['meaning'][match]}"
                 )
-            
+
+    score = base_score + bonus_score
 
     return {
+        "base_score": base_score,
+        "bonus_score": bonus_score,
         "score": score,
         "details": details,
     }

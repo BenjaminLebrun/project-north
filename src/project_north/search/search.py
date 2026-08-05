@@ -44,8 +44,6 @@ def search_first_names(
                 if gender != "unisex":
                     continue
 
-        seen_names.add(first_name["name"])
-
         scoring = calculate_score(
             profile,
             first_name,
@@ -59,7 +57,11 @@ def search_first_names(
                 expression=first_name["expression"]["expression"],
                 soul=first_name["soul"]["soul"],
                 personality=first_name["personality"]["personality"],
+
+                base_score=scoring["base_score"],
+                bonus_score=scoring["bonus_score"],
                 score=scoring["score"],
+
                 details=scoring["details"],
                 interpretation=interpret_score(scoring["score"]),
             )
