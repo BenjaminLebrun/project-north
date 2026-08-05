@@ -12,3 +12,16 @@ class CompatibilitySettings:
     use_royal: bool = True
 
     use_meaning: bool = True
+
+    @classmethod
+    def numerology_only(cls):
+        return cls(
+            use_biblical=False,
+            use_historical=False,
+            use_royal=False,
+            use_meaning=False,
+        )
+
+    @classmethod
+    def full(cls):
+        return cls()
