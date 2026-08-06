@@ -5,6 +5,68 @@ from project_north.scoring.scorer import calculate_score
 from project_north.analysis.score_interpretation import interpret_score
 
 
+def matches_filters(first_name, filters):
+
+    if filters.gender:
+        gender = first_name.get("gender", "unknown")
+
+        if filters.gender == "male":
+            if gender not in ("male", "unisex"):
+                return False
+
+        elif filters.gender == "female":
+            if gender not in ("female", "unisex"):
+                return False
+
+        elif filters.gender == "unisex":
+            if gender != "unisex":
+                return False
+
+    if filters.expression_values:
+        if (
+            first_name["expression"]["expression"]
+            not in filters.expression_values
+        ):
+            return False
+
+    if filters.soul_values:
+        if (
+            first_name["soul"]["soul"]
+            not in filters.soul_values
+        ):
+            return False
+
+    if filters.personality_values:
+        if (
+            first_name["personality"]["personality"]
+            not in filters.personality_values
+        ):
+            return False
+
+    if filters.expression is not None:
+        if (
+            first_name["expression"]["expression"]
+            != filters.expression
+        ):
+            return False
+
+    if filters.soul is not None:
+        if (
+            first_name["soul"]["soul"]
+            != filters.soul
+        ):
+            return False
+
+    if filters.personality is not None:
+        if (
+            first_name["personality"]["personality"]
+            != filters.personality
+        ):
+            return False
+
+    return True
+
+
 def search_first_names(
     profile,
     settings=None,
@@ -29,41 +91,8 @@ def search_first_names(
 
         seen_names.add(first_name["name"])
 
-        if filters.gender:
-            gender = first_name.get("gender", "unknown")
-
-            if filters.gender == "male":
-                if gender not in ("male", "unisex"):
-                    continue
-
-            elif filters.gender == "female":
-                if gender not in ("female", "unisex"):
-                    continue
-
-            elif filters.gender == "unisex":
-                if gender != "unisex":
-                    continue
-
-        if filters.expression_values:
-            if (
-                first_name["expression"]["expression"]
-                not in filters.expression_values
-            ):
-                continue
-
-        if filters.soul_values:
-            if (
-                first_name["soul"]["soul"]
-                not in filters.soul_values
-            ):
-                continue
-
-        if filters.personality_values:
-            if (
-                first_name["personality"]["personality"]
-                not in filters.personality_values
-            ):
-                continue
+        if not matches_filters(first_name, filters):
+            continue
 
         scoring = calculate_score(
             profile,
