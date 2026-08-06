@@ -26,27 +26,27 @@ def evaluate(
         settings.use_expression
         and expression in RULES["expression"]
     ):
-        base_score += WEIGHTS["expression"]
+        base_score += settings.expression_weight
         details.append(
-            f"Expression {expression} : +{WEIGHTS['expression']}"
+            f"Expression {expression} : +{settings.expression_weight}"
         )
 
     if (
         settings.use_soul
         and soul in RULES["soul"]
     ):
-        base_score += WEIGHTS["soul"]
+        base_score += settings.soul_weight
         details.append(
-            f"Âme {soul} : +{WEIGHTS['soul']}"
+            f"Âme {soul} : +{settings.soul_weight}"
         )
 
     if (
         settings.use_personality
         and personality in RULES["personality"]
     ):
-        base_score += WEIGHTS["personality"]
+        base_score += settings.personality_weight
         details.append(
-            f"Personnalité {personality} : +{WEIGHTS['personality']}"
+            f"Personnalité {personality} : +{settings.personality_weight}"
         )
 
     # Bonus
@@ -56,27 +56,27 @@ def evaluate(
             settings.use_biblical
             and metadata.get("biblical") == "true"
         ):
-            bonus_score += WEIGHTS["biblical"]
+            bonus_score += settings.biblical_weight
             details.append(
-                f"Biblique : +{WEIGHTS['biblical']}"
+                f"Biblique : +{settings.biblical_weight}"
             )
 
         if (
             settings.use_historical
             and metadata.get("historical") == "true"
         ):
-            bonus_score += WEIGHTS["historical"]
+            bonus_score += settings.historical_weight
             details.append(
-                f"Historique : +{WEIGHTS['historical']}"
+                f"Historique : +{settings.historical_weight}"
             )
 
         if (
             settings.use_royal
             and metadata.get("royal") == "true"
         ):
-            bonus_score += WEIGHTS["royal"]
+            bonus_score += settings.royal_weight
             details.append(
-                f"Royal : +{WEIGHTS['royal']}"
+                f"Royal : +{settings.royal_weight}"
             )
 
         if settings.use_meaning:
@@ -87,10 +87,12 @@ def evaluate(
 
             for match in meaning_matches:
 
-                bonus_score += WEIGHTS["meaning"][match]
+                weight = settings.meaning_weights.get(match, 0)
+
+                bonus_score += weight
 
                 details.append(
-                    f"Signification {match} : +{WEIGHTS['meaning'][match]}"
+                    f"Signification {match} : +{weight}"
                 )
 
     score = base_score + bonus_score

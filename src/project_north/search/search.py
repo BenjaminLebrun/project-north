@@ -44,6 +44,27 @@ def search_first_names(
                 if gender != "unisex":
                     continue
 
+        if filters.expression_values:
+            if (
+                first_name["expression"]["expression"]
+                not in filters.expression_values
+            ):
+                continue
+
+        if filters.soul_values:
+            if (
+                first_name["soul"]["soul"]
+                not in filters.soul_values
+            ):
+                continue
+
+        if filters.personality_values:
+            if (
+                first_name["personality"]["personality"]
+                not in filters.personality_values
+            ):
+                continue
+
         scoring = calculate_score(
             profile,
             first_name,

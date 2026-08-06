@@ -17,5 +17,5 @@ def test_calculate_score():
 
     score = calculate_score({}, first_name)
 
-    assert score["score"] == 45
+    assert score["score"] == 40
     assert isinstance(score["details"], list)
